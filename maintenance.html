@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechamate - Book Your Car Maintenance</title>
+    <link rel="stylesheet" href="style.css
+    ">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mechamate</h1>
+            <nav>
+                <ul>
+                    <li><a href="#booking-form">Book Now</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="booking-form" class="booking-section">
+        <div class="container">
+            <h2>Book Your Car for Maintenance</h2>
+            <!-- Booking form starts here -->
+            <form action="#" method="post" onsubmit="return validateBookingForm()">
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="carType">Car Type:</label>
+                <input type="text" id="carType" name="carType" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="appointmentDate">Date of Appointment:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <input type="submit" value="Book Now">
+            </form>
+            <!-- Booking form ends here -->
+            <div id="booking-image">
+                <!-- Place the screenshot here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections like Services, Contact etc. -->
+    <!-- ... -->
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Mechamate - All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="maintenance.scripts"></script>
+</body>
+</html>

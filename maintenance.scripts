@@ -1,0 +1,15 @@
+function validateBookingForm() {
+    var userName = document.getElementById('userName').value;
+    var carType = document.getElementById('carType').value;
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var appointmentDate = document.getElementById('appointmentDate').value;
+
+    if (!userName || !carType || !phoneNumber || !appointmentDate) {
+        alert('Please fill out all the fields.');
+        return false;
+    }
+    return true;
+}
+
+// Include other scripts from your previous JavaScript
+// ...

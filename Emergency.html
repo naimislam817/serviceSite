@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Roadside Assistance & Vehicle Maintenance</title>
+    <link rel="stylesheet" type="text/css" href="Emergency.css">
+    
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+        
+     
+      
+</head>
+<body>
+    <header>
+        <img src="emg1.png" alt="Emergency Roadside Assistance">
+        <h1>Emergency Roadside Assistance & Vehicle Maintenance</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Reliable Roadside Assistance</h2>
+            <p>Our dedicated team is available 24/7 to assist you in case of breakdowns, flat tires, or any other roadside emergencies. We aim to get you back on the road quickly and safely.</p>
+            <button id="assistanceButton">Request Assistance</button>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <img src=".png" alt="Contact Us">
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="issue">Describe your issue:</label><br>
+                <textarea id="issue" name="issue"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="map-container"></div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Emergency Roadside Assistance</p>
+    </footer>
+    <script src="emergency.js"></script>
+</body>
+</html>

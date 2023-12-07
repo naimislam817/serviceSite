@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Rental Services</title>
+<link rel="stylesheet" href="rent.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Logo Here</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Rental Services</a></li>
+            <li><a href="#">Maintenance Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="book-now">Book Now</button>
+</header>
+
+<main>
+    <section class="booking-form">
+        <h1>Make your booking</h1>
+        <form id="bookingForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address*" required>
+            <input type="text" id="passengers" name="passengers" placeholder="Passengers #">
+            <input type="text" id="pickup" name="pickup" placeholder="Pick up address">
+            <input type="text" id="dropoff" name="dropoff" placeholder="Drop off address">
+            <input type="date" id="date" name="date" placeholder="Select date">
+            <textarea id="description" name="description" placeholder="Description"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</main>
+
+<script src="rent.jss</script>
+</body>
+</html>
