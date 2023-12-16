@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechanicMate Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Register as:</h2>
+        <select id="user-role" onchange="updateForm()">
+            <option value="customer">Customer</option>
+            <option value="driver">Driver</option>
+            <option value="workshop">Workshop</option>
+            <option value="admin">Admin</option>
+        </select>
+        <form id="registration-details">
+            <!-- Additional form fields will be added here based on selection -->
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
