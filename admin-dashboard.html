@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Admin Dashboard</h2>
+        <div class="section">
+            <h3>Driver Details</h3>
+            <div id="driver-details" class="details-container">
+                <!-- Driver details will be listed here -->
+            </div>
+        </div>
+        <div class="section">
+            <h3>Mechanic Details</h3>
+            <div id="mechanic-details" class="details-container">
+                <!-- Mechanic details will be listed here -->
+            </div>
+        </div>
+        <div class="section">
+            <h3>Customer Booking Details</h3>
+            <div id="booking-details" class="details-container">
+                <!-- Booking details will be listed here -->
+            </div>
+        </div>
+        <div class="side-tray">
+            <h3>Workshop Details</h3>
+            <div id="workshop-details" class="tray-container">
+                <!-- Workshop details will be displayed here -->
+            </div>
+            <h3>Driver History</h3>
+            <div id="driver-history" class="tray-container">
+                <!-- Driver history will be displayed here -->
+            </div>
+        </div>
+        <div class="chart-container">
+            <h3>Booking Services Chart</h3>
+            <canvas id="booking-chart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

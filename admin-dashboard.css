@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.details-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 200px; /* Adjust as needed */
+    overflow-y: auto; /* Enables scrolling */
+}
+
+.side-tray {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.tray-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.chart-container {
+    float: left;
+    width: 40%;
+}
