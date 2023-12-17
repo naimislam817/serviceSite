@@ -8,40 +8,73 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <h2>Admin Dashboard</h2>
-        <div class="section">
-            <h3>Driver Details</h3>
-            <div id="driver-details" class="details-container">
-                <!-- Driver details will be listed here -->
+        <header class="dashboard-header">
+            <h2>Admin Dashboard</h2>
+            <nav class="dashboard-nav">
+                <a href="#driver-details">Drivers</a>
+                <a href="#mechanic-details">Mechanics</a>
+                <a href="#booking-details">Bookings</a>
+                <a href="#workshop-details">Workshops</a>
+                <a href="#driver-history">History</a>
+                <a href="#" id="logout">Logout</a>
+            </nav>
+        </header>
+
+        <div class="dashboard-main">
+            <div class="dashboard-section" id="driver-details">
+                <h3>Driver Details</h3>
+                <ul class="details-list">
+                    <!-- Dummy data for driver details -->
+                    <li>John Doe - 4.5 Rating - 200 Rides</li>
+                    <li>Jane Smith - 4.7 Rating - 150 Rides</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-section" id="mechanic-details">
+                <h3>Mechanic Details</h3>
+                <ul class="details-list">
+                    <!-- Dummy data for mechanic details -->
+                    <li>Mike Johnson - 5 Years Experience</li>
+                    <li>Alice Brown - Specialist in Hybrid Vehicles</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-section" id="booking-details">
+                <h3>Customer Booking Details</h3>
+                <ul class="details-list">
+                    <!-- Dummy data for booking details -->
+                    <li>Booking ID: #00123 - Scheduled Maintenance</li>
+                    <li>Booking ID: #00124 - Tire Replacement</li>
+                </ul>
             </div>
         </div>
-        <div class="section">
-            <h3>Mechanic Details</h3>
-            <div id="mechanic-details" class="details-container">
-                <!-- Mechanic details will be listed here -->
+
+        <aside class="dashboard-side-tray">
+            <div class="tray-section" id="workshop-details">
+                <h3>Workshop Details</h3>
+                <ul class="details-list">
+                    <!-- Dummy data for workshop details -->
+                    <li>Workshop A - 10 Mechanics</li>
+                    <li>Workshop B - 7 Mechanics</li>
+                </ul>
             </div>
-        </div>
-        <div class="section">
-            <h3>Customer Booking Details</h3>
-            <div id="booking-details" class="details-container">
-                <!-- Booking details will be listed here -->
+
+            <div class="tray-section" id="driver-history">
+                <h3>Driver History</h3>
+                <ul class="details-list">
+                    <!-- Dummy data for driver history -->
+                    <li>John Doe - Last Ride 2 days ago</li>
+                    <li>Jane Smith - Last Ride 1 week ago</li>
+                </ul>
             </div>
-        </div>
-        <div class="side-tray">
-            <h3>Workshop Details</h3>
-            <div id="workshop-details" class="tray-container">
-                <!-- Workshop details will be displayed here -->
-            </div>
-            <h3>Driver History</h3>
-            <div id="driver-history" class="tray-container">
-                <!-- Driver history will be displayed here -->
-            </div>
-        </div>
-        <div class="chart-container">
+        </aside>
+
+        <div class="dashboard-chart-container">
             <h3>Booking Services Chart</h3>
             <canvas id="booking-chart"></canvas>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <script src="admin-dashboard.js"></script>
 </body>
