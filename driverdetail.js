@@ -1,7 +1,6 @@
-document.getElementById('driver-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    // Here you can add code to handle the form submission,
-    // like validating the input and sending it to a server.
-    alert('Form Submitted!'); // Placeholder for demonstration
-    // You would normally send the data to a server here.
+document.getElementById('logout').addEventListener('click', function() {
+    // Handle the logout process
+    // In a real application, you would also need to clear the session or token
+    alert('Logging out...');
+    window.location.href = 'login.html'; // Redirect to the login page or front page
 });

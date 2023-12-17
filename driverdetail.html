@@ -3,31 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driver Details Form</title>
+    <title>Driver Dashboard | Mechamate</title>
     <link rel="stylesheet" href="driverdetail.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Driver Information</h2>
-        <form id="driver-form">
-            <div class="input-group">
-                <label for="national-id">National ID Card:</label>
-                <input type="text" id="national-id" name="national-id">
+    <header class="dashboard-header">
+        <h1>Driver Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Rides</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="dashboard-main">
+        <section class="stats-section">
+            <div class="stat-card">
+                <h2>Total Rides</h2>
+                <p id="totalRides">42</p>
             </div>
-            <div class="input-group">
-                <label for="license-number">Driver License Number:</label>
-                <input type="text" id="license-number" name="license-number">
+            <div class="stat-card">
+                <h2>Rating</h2>
+                <p id="driverRating">4.8</p>
             </div>
-            <div class="input-group">
-                <label for="bank-solvency">Bank Solvency:</label>
-                <input type="text" id="bank-solvency" name="bank-solvency">
+            <div class="stat-card">
+                <h2>Earnings</h2>
+                <p id="totalEarnings">$1,250</p>
             </div>
-            <div class="input-group">
-                <label for="work-experience">Previous Work Experience:</label>
-                <textarea id="work-experience" name="work-experience"></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        </section>
+        <section class="upcoming-rides">
+            <h2>Upcoming Rides</h2>
+            <!-- This list should be populated dynamically with actual data -->
+            <ul>
+                <li>Ride to City Center - <strong>Tomorrow at 10 AM</strong></li>
+                <li>Airport Pickup - <strong>Friday at 6 PM</strong></li>
+            </ul>
+        </section>
     </div>
     <script src="driverdetail.js"></script>
 </body>
