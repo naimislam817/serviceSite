@@ -16,13 +16,13 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     var dashboardUrl;
     switch (userType) {
         case 'driver':
-            dashboardUrl = 'driver-dashboard.html'; // Replace with your actual driver dashboard URL
+            dashboardUrl = 'driverdetail.html'; // Replace with your actual driver dashboard URL
             break;
         case 'customer':
-            dashboardUrl = 'customer-dashboard.html'; // Replace with your actual customer dashboard URL
+            dashboardUrl = 'customerdash.html'; // Replace with your actual customer dashboard URL
             break;
         case 'owner':
-            dashboardUrl = 'workshop-owner-dashboard.html'; // Replace with your actual workshop owner dashboard URL
+            dashboardUrl = 'mechanic-dashboard.html'; // Replace with your actual workshop owner dashboard URL
             break;
         case 'admin':
             dashboardUrl = 'admin-dashboard.html'; // Replace with your actual admin dashboard URL
